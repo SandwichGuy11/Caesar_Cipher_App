@@ -83,7 +83,10 @@ layout = [
 
 ]
 
-window = sg.Window(title="Caesar Cipher", layout=layout)
+window = sg.Window(title="Caesar Cipher", layout=layout,
+                   grab_anywhere_using_control=False,
+                   grab_anywhere=False
+                   )
 # ------------------------------ MAIN LOOP ------------------------------
 
 running = True
